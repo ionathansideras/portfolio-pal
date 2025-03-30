@@ -1,0 +1,43 @@
+@import "_variables.scss";
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10svh;
+
+    .form-group {
+        position: relative;
+        width: 100%;
+        margin: 0 10px;
+
+        input {
+            width: calc(100% - 70px);
+            padding: 0px 50px 0px 20px;
+            border: 1px solid lightgray;
+            border-radius: 21rem;
+            font-size: 1rem;
+            height: 50px;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            height: 40px;
+            width: 40px;
+            background: linear-gradient(
+                to right,
+                $main_color,
+                lighten($main_color, 10%)
+            );
+            color: white;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

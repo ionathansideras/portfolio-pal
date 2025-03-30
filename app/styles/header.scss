@@ -1,0 +1,41 @@
+@import "_variables.scss";
+
+header {
+    height: 10svh;
+    background: linear-gradient(
+        to right,
+        $main_color,
+        lighten($main_color, 10%)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    .identity {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: white;
+            font-size: $header-font-size;
+        }
+    }
+
+    .chat-controls {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+}
